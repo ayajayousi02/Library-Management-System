@@ -189,8 +189,6 @@ class MainMenuPanel {
     public MainMenuPanel(LibraryManagementSystem system) {
         panel = new JPanel(new GridLayout(4, 1, 10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(50, 100, 50, 100));
-        
-        // Buttons
         JButton addBookBtn = new JButton("Add New Book");
         addBookBtn.addActionListener(e -> system.showScreen(system.A));
         
@@ -277,8 +275,6 @@ class AddBookPanel {
         gbc.gridwidth = 2;
         gbc.insets = new Insets(20, 5, 5, 5);
         panel.add(saveBtn, gbc);
-        
-        // Back Button
         JButton backBtn = new JButton("Back");
         backBtn.addActionListener(e -> {
             system.showScreen(system.M);
